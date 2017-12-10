@@ -19,20 +19,10 @@ import { FilmesDetalhesPage } from '../filmes-detalhes/filmes-detalhes';
   ]
 })
 export class FeedPage {
-  public objeto_feed = {
-    titulo: "Ilso Pasa",
-    data: "November 5, 1955",
-    descricao: "Estou aprendendo essa poha!!!",
-    qntd_likes: 12,
-    qntd_comments: 4,
-    time_comment: "11h ago "
-  }
 
   public lista_filmes = new Array<any>();
   public page = 1;
 
-
-  public nomeUsuario: string = "Ilso Pasa";
   public loader;
   public refresher;
   public isRefreshing: boolean = false;
