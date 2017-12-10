@@ -14,7 +14,7 @@ export class MovieProvider {
   private baseApiPath = "https://api.themoviedb.org/3";
 
   constructor(public http: Http) {
-    console.log('Hello MovieProvider Provider');
+    
   }
 
   getLatesMovies(page = 1){
