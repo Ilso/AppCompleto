@@ -25,11 +25,6 @@
 
     <img [src]="'https://image.tmdb.org/t/p/w500/' + filme.backdrop_path">
 
-    <ion-card-content>
-      <p>{{ filme.overview }}</p>
-    </ion-card-content>
-
-
     <button ion-button block (click)="abrirDetalhes(filme)">Detalhes</button>
   </ion-card>
 
