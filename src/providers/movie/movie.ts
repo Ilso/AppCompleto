@@ -17,14 +17,17 @@ export class MovieProvider {
     
   }
 
+  //Url para buscar filmes populares na webapi movieDB
   getLatesMovies(page = 1){
-    return this.http.get(this.baseApiPath + `/movie/popular?page=${page}&api_key=` + this.getApiKey());
+    return this.http.get(this.baseApiPath + `/movie/popular?page=${page}&api_key=` + this.getApiKey()+"&language=pt-BR");
   }
 
+  //Detalhes dos filmes
   getMovieDetails(filmeId){
-    return this.http.get(this.baseApiPath + `/movie/${filmeId}?api_key=` + this.getApiKey());
+    return this.http.get(this.baseApiPath + `/movie/${filmeId}?api_key=` + this.getApiKey()+"&language=pt-BR");
   }
 
+  //ApiKey uma para cada usuário
   getApiKey(): string{
     let valueKey = "3d3089084d3030841c3dfcdd2893bd9a";
     return valueKey;
